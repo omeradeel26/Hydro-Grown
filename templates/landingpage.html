@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HYDRO_GROWN</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='landing.css') }}">
+
+</head>
+<body>
+	<header class="navbar"> 
+		<ul class="navbar">
+			<a href= '#' class='logo'>Hydro-Grown</a>
+				<li><button class="btn-nav" style="right:550%;"><a href="#problem">Problem</a></button></li>
+				<li><button class="btn-nav" style="right:555%;"><a href="#solution"> Solution </a></button></li>
+				<li><button class="logbtn"><a href= "{{url_for('login')}}">Log In</a></button></li>
+		</ul>	
+	</header> 
+
+	<div class="introduction-container" id="home">
+		<img src="intro.png" width="600" height="700" style="position:relative;;left:52%; margin-top: 8.5%;filter:brightness(100%);">
+		<div class="heading" style="top:-70%; left:5%; font-family:title; font-size:120px;">
+			HYDRO-GROWN
+		</div>
+		<div class="description" style="animation-name:moveToLeft; animation-duration:2s; top:-60%; margin-left: 6%;">
+			A cool website app that allows you to track<br>how much water your plants need using real and live weather statistics.<br>
+			<br>
+			'Plant' Ahead Starting Now!
+		</div>
+	</div>
+
+	<div class="problem-container" style="background-image:url(plantH.jpg); filter: brightness(80%);" id='problem'>
+		<div class="heading" style='margin-left: 100px; top:100px; left:980px; color: white; z-index: 2;'>
+			Problem
+		</div>
+		<div class="description" style="margin-right:500px;top:200px;text-align:right; color: white; animation-name:moveToLeft; animation-duration:2s">
+			Nowadays, more and more have people start to breed their own plants.
+		<br>
+			However, the plant survival rate is droping because people who are new<br>
+			to the area of gardening do not know when the best time to water<br>
+			their plants and how much water is needed for each time. 
+		</div>
+	</div>
+
+
+	<div class="heading" id="solution">
+		<br>
+		<br>
+		Solution
+
+		<button class="btn-nav"><a href="index.html">Try Out Our App!</a> </button>
+	</div>
+	
+	<div class="description">
+		<div>Garden is a perfect website to solve this question and save plants!</div>
+		<div>Here are the reasons:</div>
+		<br>
+		<div>#1 Garden provides accurate time for watering plants.</div>
+		<div>#2 Garden provides approximate amount of water needed.</div>
+	</div>
+
+	<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+</body>
+</html>

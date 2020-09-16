@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Garden Login Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+	<div class="title">
+		<h2>Welcome to Hydro-Grown</h2>
+	</div>
+	<div class="form-container">
+		<ul class="list">
+			<li><h5>Username</h5></li>
+			<li><input type="text" name="Username" placeholder="Enter Your Username"></li>
+			<li><h5>Password</h5></li>
+			<li><input type="password" name="Password" placeholder="Enter Your Password"></li>
+			<li><input type="button" name="Submit" value="Sign in" onclick="window.location.href = 'plantintro.html'"></li>
+			<li><h6>Forget Password?</h6></li>
+		</ul>
+	</div>
+
+	<div class="new-form-container">
+		<ul class="list2">
+			<li><h5>New User?</h5></li>
+			<li><input type="button" value="Create an account"></li>
+		</ul>
+	</div>
+
+</body>
+</html>
